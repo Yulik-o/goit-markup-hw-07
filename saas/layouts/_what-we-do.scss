@@ -3,10 +3,8 @@
   display: flex;
   /*align-items: center;*/
   gap: 30px;
+position: relative;
 
-/*.what-we-do {
-  /position: relative;
-}*/
 &-text {
   position: absolute;
   font-weight: 700;
@@ -24,4 +22,7 @@
   padding-bottom: 27px;
   padding-top: 27px;
 }
+}
+.heading-first-page {
+  margin-bottom: 50px;
 }

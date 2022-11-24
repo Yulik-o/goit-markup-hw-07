@@ -1,57 +1,33 @@
 .header {
   height: 80px;
+&-logo {
+  margin-right: 93px;
 }
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
+&-email {
+  margin-left: auto;
 }
-.bluelogo {
-  color: var(--accent-text-color);
 }
-.blacklogo {
-  color: var(--black-logo);
-}
-.whitelogo {
-  color: var(--white-text-color);
-  background-color: var(--footer-background);
-}
+
 .site-nav,
 .header-nav,
 .header,
 .header-logo,
 .header-contacts,
-.email-header,
+.header-email,
 .tel {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.email-color, .tel {
+  color: var(--secondary-text-color);
+}
 .email-icon,
 .tel-icon {
   margin-right: 10px;
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav,
-.header-contacts {
-  gap: 50px;
-}
-.header-logo {
-  margin-right: 93px;
-}
-.email-header {
-  margin-left: auto;
-}
-.hero-background {
-  text-align: center;
-
-  height: 600px;
-  left: 0px;
-  top: 80px;
-}
 .site-nav,
 .header-contacts {
   font-style: normal;
@@ -60,6 +36,7 @@
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+   gap: 50px;
   margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -67,9 +44,7 @@
   color: var(--accent-text-color);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-studio-first::after {
+&-first::after {
   content: '';
   width: 48px;
   height: 4px;
@@ -80,9 +55,12 @@
   display: block;
   bottom: -32px;
 }
+&:hover, &:focus {
+color: var(--accent-text-color);
+  fill: currentColor;
+}
+}
 
-.nav-studio:hover,
-.nav-studio:focus,
 .nav-contacts:hover,
 .nav-contacts:focus,
 .nav-portfolio:hover,
@@ -98,20 +76,10 @@
   color: var(--accent-text-color);
   fill: currentColor;
 }
-.email-color {
-  color: var(--secondary-text-color);
-}
 
-.tel {
-  color: var(--secondary-text-color);
-}
 .nav-portfolio,
 .nav-contacts {
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.email-icon,
-.tel-icon {
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
