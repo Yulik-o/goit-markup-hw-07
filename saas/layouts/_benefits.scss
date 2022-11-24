@@ -4,7 +4,7 @@
   /*align-items: center;*/
   gap: 30px;
 
-&-item {
+&__item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -13,7 +13,7 @@
   margin-bottom: 10px;
   color: var(--primary-text-color);
 }
-&-card {
+&__card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   margin-bottom: 30px;
   border-radius: 4px;
 }
-&-section {
+&__section {
   padding-top: 89px;
 }
 }

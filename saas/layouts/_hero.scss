@@ -8,7 +8,7 @@
   color: var(--white-text-color);
   margin-left: auto;
   margin-right: auto;
-  &-background {
+  &__background {
     text-align: center;
     left: 0px;
     top: 80px;
@@ -24,7 +24,7 @@
       url(../img/hero.jpg);
     background-size: cover;
   }
-  &-button {
+  &__button {
     width: 216px;
     height: 50px;
     margin-top: 30px;
